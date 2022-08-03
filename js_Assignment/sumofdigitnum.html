@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function addDigitsOfNumber()
+{
+  var num, rem, sum=0;
+  num = parseInt(document.getElementById("num").value);
+  while(num)
+  {
+    rem = num%10;
+    sum = sum+rem;
+    num = Math.floor(num/10);
+  }
+  document.getElementById("result").value = sum;
+}
+</script>
+</head>
+<body>
+<center>
+    <h1>Sum of digit number</h1>
+<p>Enter the Number: <input id="num"></p>
+<button onclick="addDigitsOfNumber()">Add Digits Of Number</button>
+<p>Result = <input id="result"></p>
+</center>
+</body>
+</html>

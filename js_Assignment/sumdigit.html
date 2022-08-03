@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sum of digits
+        </title>
+        <script>
+            function sumdigit()
+            {
+                var n=parseInt(document.getElementById("num").value);
+                var r=document.getElementById("result");
+                var sum=0;
+                //console.log(n%10);
+                //console.log(parseInt(n/10));
+                while(n)
+                {
+                    r = n % 10;
+                    sum= sum + r;
+                    n= parseInt(n/10);
+                }
+                r.innerHTML=r.innerHTML+"The sum of digit of a given number is " +sum +"<br>";  
+                //console.log(sum);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <form>
+        <div class="container">
+            <h1>Sum of Digits</h1>
+            Enter a number : <input type="text" id="num" placeholder="Enter Number" required>
+            <br><br>
+             <input type="button" id="btn" value="SUM" onclick="sumdigit()">
+             <br><br>
+             <h2 id="result" style="color:red";></h2>
+        </div>
+    </form>
+    </center>
+    
+    </body>
+</html>

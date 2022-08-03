@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student Details Form
+        </title>
+     <script>
+         function Studentdetails(){
+             var name=document.getElementById("name").value;
+             var id=document.getElementById("studid").value;
+             var Contactno=document.getElementById("contactno").value;
+             var Email=document.getElementById("email").value;
+            // document.getElementById("result").innerHTML= name+"<br>"+id+"<br>"+Contactno+"<br>"+Email+"<br>";
+            var x=document.getElementById("result");
+            x.innerHTML=x.innerHTML+"<br> Enter Name:"+name+"<br><br>";
+            x.innerHTML=x.innerHTML+"Enter ID:"+id+"<br><br>";
+            x.innerHTML=x.innerHTML+"Enter Contact No.:"+Contactno+"<br><br>";
+            x.innerHTML=x.innerHTML+"Enter Email Id:"+Email+"<br><br>";
+         }
+     </script>
+    </head>
+    <body>
+        <center>
+            <div class="container">
+      <strong> <u> <h1> Student Details Form </h1></strong></u>
+      <form>
+          <lable For="Name">Enter Student Name :</lable>
+          <input type="text" placeholder="Enter Student Name" id="name" required><br><br>
+          Enter Student Id : <input class="input-field" type="text" placeholder="Student id" id="studid" required> 
+           <br><br>
+          Enter Contact Number : <input type="text" placeholder="Contact No." id="contactno"><br><br>
+          Enter Email Id : <input type="Email" placeholder="abc@gmail.com" id="email" required><br><br>
+          <input type="button" value="Submit" id="submit" onclick="Studentdetails()"><br><br>
+
+        <br>  <h3  style=color:green; id="result">The form is Successfully Submited.The details as follow: </h2><br><br>
+
+      </form>
+
+    </center>
+</div>
+    </body>
+</html>

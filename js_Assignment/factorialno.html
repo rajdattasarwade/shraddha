@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Factorial of the number</title>
+        <script>
+            function fact()
+            {
+                  var fact=1;
+                  var n=parseInt(document.getElementById("num").value);
+                  var x=document.getElementById("result");
+                  x.innerHTML=""; 
+                  while(n>=1)
+                  {
+                      fact=fact*n;
+                      n--;
+                  }
+                 x.innerHTML=x.innerHTML+"The Factorial of a given number is " +fact+"<br>";  
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <form>
+                    <u><h1> Factorial of the number </h1></u><br>
+               Enter Number: <input type="text" placeholder="Enter number" id="num">
+                <br><br>
+                <input type="button" value="Factorial" id="Fact" onclick="fact()">
+                <br><br><br>
+                <h2 id="result" style="color:red";>Factorial of the given number:</h2>
+                </form>
+                </center>
+    </body>
+</html>
